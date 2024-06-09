@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+        <div class="container">
+          <a href="index.html">
+            <img style="padding-right: 10px;" src="images/blue-calendar.jpg" height="40" alt="" loading="lazy" />
+          </a>
+          <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="Dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Task-Detail.html">Task Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Task-Creation.html">Task Creation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Login.html">Login</a>
+              </li>
+
+      
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="container custom-container">
+                    <h1 style="text-align: center; font-size: 4em; font-family:'Courier New', Courier, monospace; font-weight:bold;">Dashboard</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <div class="container-fluid">
+                    <aside class="aside">
+                        <h2>Tasks</h2>
+                        <div class="d-flex flex-column bd-highlight mb-3 rounded-task">
+                            <div class="p-2 bd-highlight rounded-task">Check Email</div>
+                            <div class="p-2 bd-highlight rounded-task">Write Report</div>
+                            <div class="p-2 bd-highlight rounded-task">Call Client</div>
+                            <div class="p-2 bd-highlight rounded-task">Team Meeting</div>
+                            <div class="p-2 bd-highlight rounded-task">Review Code</div>
+                            <div class="p-2 bd-highlight rounded-task">Plan Agenda</div>
+                            <div class="p-2 bd-highlight rounded-task">Update Website</div>
+                            <div class="p-2 bd-highlight rounded-task">Test Software</div>
+                            <div class="p-2 bd-highlight rounded-task">Prepare Slides</div>
+                            <div class="p-2 bd-highlight rounded-task">Send Invoice</div>
+                            <div class="p-2 bd-highlight rounded-task">Research Topic</div>
+                            <div class="p-2 bd-highlight rounded-task">Daily Standup</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2>Notifications</h2>
+                        <div class="col-12 col-md-6 main-content">
+                            <div class="d-flex flex-column bd-highlight mb-3 notifications-special">
+                                <div style="background-color: rgba(255, 127, 127, 0.762); border-radius: 10px;" class="p-2 bd-highlight">Task Due Today</div>
+                                <div class="p-2 bd-highlight">New Task Assigned</div>
+                                <div style="background-color: rgba(138, 255, 127, 0.762); border-radius: 10px;" class="p-2 bd-highlight">Task Completed</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 main-content">
+                            <div class="d-flex flex-column-reverse bd-highlight notifications-special">
+                                <div class="p-2 bd-highlight">Upcoming Deadline</div>
+                                <div style="background-color: rgba(127, 200, 255, 0.762); border-radius: 10px;" class="p-2 bd-highlight">Comment Added</div>
+                                <div style="background-color: rgba(255, 127, 127, 0.762); border-radius: 10px;" class="p-2 bd-highlight">Overdue Task</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Weeks and Priorities</h2>
+                    <div class="row" style="background-color: rgb(71, 157, 206);">
+                        <div style="padding: 10px;" class="accordion" id="accordionPanelsStayOpenExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Week 1
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                              <div class="accordion-body">
+                                <strong>Bachelor Party Weekend</strong> Finalize the itinerary and make any last-minute reservations for the bachelor party weekend to ensure everything goes smoothly. Pack all necessary items, including clothes, gifts, and any special equipment needed for planned activities. Coordinate with friends to arrange transportation and set meeting points for the trip to the bachelor party destination.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Week 2
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                              <div class="accordion-body">
+                                <strong>Visit Parents</strong> Call or message your parents to confirm the visit and discuss any plans or activities they have in mind. Prepare a small gift or thoughtful gesture to bring along, showing appreciation for their hospitality. Plan your travel route and schedule, ensuring you arrive on time and make the most of your visit with your parents.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Week 3
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                              <div class="accordion-body">
+                                <strong>Complete Application Project</strong> Review the project requirements and create a checklist of tasks to ensure all aspects of the application are covered. Dedicate focused time blocks each day to work on the project, aiming to complete one major task or milestone daily. Test the application thoroughly, fix any bugs, and prepare the final presentation or documentation for submission.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                Week 4
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                              <div class="accordion-body">
+                                <strong>Prep and Travel to Yosemite</strong> Research and plan the hiking trails and activities you want to do in Yosemite, making note of any permits or reservations needed. Pack essential gear and supplies for the trip, including camping equipment, hiking gear, and sufficient food and water. Check the weather forecast and road conditions, and map out your travel route to ensure a safe and timely arrival at Yosemite.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;" class="container">
+                        <h2>Progress Indicators</h2>
+                        <div class="progress indicator-margin">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress indicator-margin">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress indicator-margin">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 31%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress indicator-margin">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 43%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress indicator-margin">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>    
+</html>

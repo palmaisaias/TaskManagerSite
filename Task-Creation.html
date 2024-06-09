@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+        <div class="container">
+          <a href="index.html">
+            <img style="padding-right: 10px;" src="images/blue-calendar.jpg" height="40" alt="" loading="lazy" />
+          </a>
+          <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="Dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Task-Detail.html">Task Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Task-Creation.html">Task Creation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Login.html">Login</a>
+              </li>
+
+      
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container datepicker-container">
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Create New Task</h1>
+        <label for="date-input" class="form-label">Choose a date:</label>
+        <input style="margin-bottom: 6px;" type="date" class="form-control" id="date-input" placeholder="Select a date">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="formGroup" placeholder="Task">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Priority Level</label>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Priority
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a style="background-color: aquamarine;" class="dropdown-item" href="#">Low Priority</a></li>
+                  <li><a style="background-color: rgb(238, 255, 127);" class="dropdown-item" href="#">Medium Priority</a></li>
+                  <li><a style="background-color: rgb(255, 189, 127);" class="dropdown-item" href="#">High Priority</a></li>
+                  <li><a style="background-color: rgb(246, 62, 62);" class="dropdown-item" href="#">Critical Priority</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Task Details</label>
+            <textarea class="form-control" id="formGroupExampleInput2" placeholder="Task Details" rows="4"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>    
+</html>

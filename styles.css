@@ -1,0 +1,94 @@
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+  color: rgb(38, 80, 185);
+}
+
+.navbar-scroll .nav-link:hover {
+  color: #64ceca;
+}
+
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #ffffffe0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/backdrop.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-width {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.full-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  height: 200px;
+}
+
+.mt-custom {
+  margin-top: 80px;
+}
+
+.custom-container {
+  margin: 25px;
+  margin-top: 75px;
+}
+.card {
+  margin-bottom: 15px;
+}
+
+.aside {
+  padding: 10px;
+  border-right: 5px solid #3d546b;
+  height: 100%;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.aside .bd-highlight:nth-child(odd) {
+  background-color: #306ba5;
+}
+.aside .bd-highlight:nth-child(even) {
+  background-color: #c7d2dd;
+}
+
+.indicator-margin {
+  margin: 4px;
+  background-color: #5ca2e7a7;
+}
+
+.notifications-special {
+  background-color: #306aa5a4;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.rounded-task {
+  border-radius: 10px;
+}
+
+.datepicker-container {
+  max-width: 400px;
+  margin: 20px auto;
+  margin-top: 75px;
+  background-color: #306aa5c0;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
